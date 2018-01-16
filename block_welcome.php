@@ -42,8 +42,8 @@ class block_welcome extends block_base {
         $userfirstname = $USER->firstname;  //get user first name, more informal
 
         $this->content         =  new stdClass;
-        $this->content->text   = '<div class="welcomediv" style="text-align: left;"><h3>Hello '.$userfirstname.'</h3></div>';
-        $this->content->text   .= '<div class="infodiv" style="text-align: center;"><h4><b>To get started choose from courses below!</b></h4></div>';
+        $this->content->text   = '<div class="welcomediv"><h3>Hello '.$userfirstname.'</h3></div>';
+        $this->content->text   .= '<div class="infodiv"><h4><b>To get started choose from courses below!</b></h4></div>';
         $this->content->footer = '';
 
         return $this->content;

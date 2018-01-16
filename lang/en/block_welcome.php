@@ -22,6 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = "Welcome";
+$string['pluginname'] = "User Dashboard";
 $string['welcome:addinstance'] = 'Add a new welcome block';
 $string['welcome:myaddinstance'] = 'Add a new welcome block';
