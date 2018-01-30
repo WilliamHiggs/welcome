@@ -14,10 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * welcome block for user dahsboard.
+ * welcome block for user dashboard.
  *
- * @package    block_welcome
- * @copyright  William Higgs <https://github.com/WilliamHiggs>
+ * @package    block_myprofile
+ * @copyright  2018
+ * @author     William Higgs <https://github.com/WilliamHiggs>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -42,8 +43,8 @@ class block_welcome extends block_base {
         $userfirstname = $USER->firstname;  //get user first name, more informal
 
         $this->content         =  new stdClass;
-        $this->content->text   = '<div class="welcomediv"><h3>Hello '.$userfirstname.'</h3></div>';
-        $this->content->text   .= '<div class="infodiv"><h4><b>To get started choose from courses below!</b></h4></div>';
+        $this->content->text   = '<div class="welcomediv" style="text-align: left;"><h3>Hello '.$userfirstname.'</h3></div>';
+        $this->content->text   .= '<div class="infodiv" style="text-align: center; margin: 25px;"><br><h4><b>To get started choose from courses below!</b></h4><br></div>';
         $this->content->footer = '';
 
         return $this->content;

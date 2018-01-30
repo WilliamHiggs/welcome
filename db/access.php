@@ -16,8 +16,9 @@
 /**
  * welcome block for user dashboard.
  *
- * @package    block_welcome
- * @copyright  William Higgs <https://github.com/WilliamHiggs>
+ * @package    block_myprofile
+ * @copyright  2018
+ * @author     William Higgs <https://github.com/WilliamHiggs>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
