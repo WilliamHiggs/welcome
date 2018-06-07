@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * Strings for component 'block_welcome' info block.
+ * welcome block for user dashboard.
  *
  * @package    block_myprofile
  * @copyright  2018
@@ -22,7 +22,19 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = "User Dashboard";
-$string['welcome:addinstance'] = 'Add a new welcome block';
-$string['welcome:myaddinstance'] = 'Add a new welcome block';
-$string['privacy:metadata'] = 'The welcome block only displays existing user data.';
+namespace block_calendar_month\privacy;
+
+class provider implements
+    // This plugin does not store any personal user data.
+    \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}
