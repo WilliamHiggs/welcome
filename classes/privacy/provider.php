@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace block_calendar_month\privacy;
+namespace block_welcome\privacy;
 
 class provider implements
     // This plugin does not store any personal user data.
